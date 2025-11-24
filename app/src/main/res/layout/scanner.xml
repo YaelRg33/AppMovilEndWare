@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+
+        <TextView
+            android:id="@+id/btnRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Regresar"
+            android:textColor="#2196F3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Escanear código"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#E8E8E8"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="center">
+
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:padding="2dp"
+            android:outlineProvider="background"
+            android:elevation="4dp"
+            android:backgroundTintMode="src_in"/>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alinea el código QR dentro del recuadro"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#616161"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

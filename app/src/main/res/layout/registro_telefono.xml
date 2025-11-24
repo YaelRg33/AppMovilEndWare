@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:fillViewport="true">
+
+
+    <!-- Encabezado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegresar"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Regresar"
+            android:textAllCaps="false"
+            android:textColor="#2196F3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Registro por teléfono"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp" />
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginTop="15dp" />
+
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Número de teléfono"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:layout_marginTop="15dp" />
+
+
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#0A4DA2"
+            android:text="Registrar"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="25dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
